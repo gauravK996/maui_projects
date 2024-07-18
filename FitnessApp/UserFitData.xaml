@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessApp.UserFitData"
+             Title="">
+    <StackLayout Padding="20">
+        <!-- Title -->
+        <Label Text="Fitness Summary"
+               FontSize="36"
+               FontAttributes="Bold"
+               TextColor="#333"
+               HorizontalOptions="Center" />
+
+        <!-- Circular Progress Indicators -->
+        <Grid Padding="20" RowSpacing="20" ColumnSpacing="30">
+            <!-- Total Run Kilometers -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Run Circle -->
+            <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="140" HeightRequest="140" CornerRadius="70" BackgroundColor="#4CAF50" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="50 km" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Run" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Cycle Circle -->
+            <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="140" HeightRequest="140" CornerRadius="70" BackgroundColor="#2196F3" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="120 km" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Cycle" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Walk Circle -->
+            <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="140" HeightRequest="140" CornerRadius="70" BackgroundColor="#FF5722" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="30 km" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Walk" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Swim Circle -->
+            <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="140" HeightRequest="140" CornerRadius="70" BackgroundColor="#673AB7" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="10 km" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Swim" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Yoga Circle -->
+            <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="140" HeightRequest="140" CornerRadius="70" BackgroundColor="#FFC107" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="15 days" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Yoga" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- Gym Circle -->
+            <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame WidthRequest="140" HeightRequest="140" CornerRadius="70" BackgroundColor="#9C27B0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="20 days" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Gym" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
